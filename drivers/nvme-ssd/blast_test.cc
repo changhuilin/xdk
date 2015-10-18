@@ -53,7 +53,7 @@ public:
       io_desc[b].action = NVME_READ;
       io_desc[b].buffer_virt = p;
       io_desc[b].buffer_phys = phys;
-      io_desc[b].num_blocks = 1;
+      io_desc[b].num_blocks = 0;
     }
 
     uint64_t counter = 0;
